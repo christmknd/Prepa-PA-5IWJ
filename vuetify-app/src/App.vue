@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <Navbar/>
+    <v-spacer></v-spacer>
     <v-main>
-      <HelloWorld/>
+      <Calculatrice/>
     </v-main>
 
     <v-footer grey>
@@ -14,14 +15,14 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import Navbar from "@/components/Navbar";
+import Calculatrice from "@/components/Calculatrice";
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld, Navbar
+    Calculatrice, Navbar
   },
 
   data: () => ({
@@ -29,3 +30,13 @@ export default {
   }),
 };
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+</style>
